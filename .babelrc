@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "src": "/",
+        "assets": "/assets",
+        "components": "/components",
+        "pages": "/pages",
+        "store": "/store",
+        "api": "/api",
+        "common": "/common"
+      }
+    }]
+  ]
+}

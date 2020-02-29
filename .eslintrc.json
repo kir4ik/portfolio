@@ -1,0 +1,63 @@
+{
+  "rules": {
+    "semi": ["error", "always"],
+    "no-var": "error",
+    "no-trailing-spaces": "error",
+    "comma-dangle": "error",
+    "no-tabs": "error",
+    "eol-last": "error",
+    "quotes": ["error", "single"],
+    "max-len": ["error", {
+      "code": 120,
+      "tabWidth": 2,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "indent": ["error", 2],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
+    "array-bracket-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": ["warn", { "forbid": ["any"] }],
+
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["airbnb"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": ["react-hooks"],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["assets", "./src/assets"],
+          ["components", "./src/components"],
+          ["pages", "./src/pages"],
+          ["store", "./src/store"],
+          ["api", "./src/api"],
+          ["common", "./src/common"]
+        ]
+      }
+    }
+  }
+}

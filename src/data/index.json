@@ -1,0 +1,54 @@
+{
+  "firstName": "Владислав",
+  "lastName": "Лакович",
+  "age": 23,
+  "gender": "мужской",
+  "avatar": "",
+  "level": 3,
+  "salaryUSD": 1000,
+  "skillLevelLimit": 10,
+  "skills": {
+    "base": [
+      { "name": "html", "level": 8 },
+      { "name": "css(scss)", "level": 8 },
+      { "name": "js", "level": 9 }
+    ],
+    "libraries": [
+      { "name": "react", "level": 9 },
+      { "name": "react/redux", "level": 8 },
+      { "name": "react/routes", "level": 8 },
+      { "name": "react/hooks", "level": 9 },
+      { "name": "recompose", "level": 7 },
+      { "name": "moment", "level": 7 },
+      { "name": "immutable", "level": 7 },
+      { "name": "lodash", "level": 6 },
+      { "name": "classnames", "level": 9 },
+      { "name": "jquery", "level": 6 },
+      { "name": "ccxt", "level": 6 }
+    ],
+    "editor": [
+      { "name": "vs code", "level": 9 },
+      { "name": "sublime text", "level": 7 },
+      { "name": "web storm", "level": 4 }
+    ],
+    "layout": [
+      { "name": "figma", "level": 6 },
+      { "name": "zeplin", "level": 8 },
+      { "name": "photoshop", "level": 4 }
+    ],
+    "utils": [
+      { "name": "git", "level": 7 },
+      { "name": "webpack", "level": 7 },
+      { "name": "parcel", "level": 7 },
+      { "name": "gulp", "level": 7 },
+      { "name": "eslint", "level": 7 },
+      { "name": "npm/yarn", "level": 7 }
+    ],
+    "other": [
+      { "name": "regexp", "level": 7 },
+      { "name": "oop", "level": 8 },
+      { "name": "rest api", "level": 9 },
+      { "name": "tests", "level": 4 }
+    ]
+  }
+}

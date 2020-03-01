@@ -1,0 +1,24 @@
+@import 'variables';
+
+%simple-block {
+  border-radius: $radius;
+
+  @include themed() {
+    color: t($color);
+    background-color: t($bg);
+    box-shadow: t($block-shadow);
+  }
+}
+
+%simple-block-with-hover {
+  @extend %simple-block;
+
+  transition: box-shadow 0.4s ease-in-out;
+
+  @include themed() {
+    &:hover {
+      background-color: t($bg-hover-dark);
+      box-shadow: t($block-shadow-hover);
+    }
+  }
+}

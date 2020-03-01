@@ -1,0 +1,50 @@
+@import '/assets/_variables';
+
+.avatar-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgba($color: #323332, $alpha: 0.1);
+  border-radius: 4px;
+  box-shadow: 5px 10px 15px rgba($color: #323332, $alpha: 0.1);
+
+  &__avatar {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    padding: 2px;
+    border: 2px solid lightsteelblue;
+    background: lightblue;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  &__additional {
+    display: grid;
+    row-gap: 10px;
+
+    &__group {
+      display: flex;
+      justify-content: center;
+
+      &__name,
+      &__age {
+        letter-spacing: 5px;
+        color: greenyellow;
+        background: rgba($color: #323332, $alpha: 0.9);
+        border-radius: 4px;
+        padding: 0 5px;
+      }
+
+      &__age {
+        margin-left: 10px;
+        letter-spacing: normal;
+      }
+    }
+
+    &__experiens {}
+    &__level {}
+    &__salary {}
+  }
+}

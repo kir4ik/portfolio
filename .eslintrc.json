@@ -24,10 +24,12 @@
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
 
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
-    "react/forbid-prop-types": ["warn", { "forbid": ["any"] }],
+    "react/forbid-prop-types": "off",
 
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+
+    "import/prefer-default-export": "warn"
   },
   "env": {
     "es6": true,
@@ -50,12 +52,14 @@
     "import/resolver": {
       "alias": {
         "map": [
+          ["src", "./src"],
           ["assets", "./src/assets"],
           ["components", "./src/components"],
           ["pages", "./src/pages"],
-          ["store", "./src/store"],
           ["api", "./src/api"],
-          ["common", "./src/common"]
+          ["context", "./src/context"],
+          ["consts", "./src/consts"],
+          ["helpers", "./src/helpers"]
         ]
       }
     }

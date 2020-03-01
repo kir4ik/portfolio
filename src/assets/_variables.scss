@@ -1,0 +1,90 @@
+$primary-color: rgb(17, 34, 62);
+$primary-color_dark: #b6b6b6;
+
+$secondary-color: rgba($primary-color, 0.5);
+$secondary-color_dark: rgba($primary-color_dark, 0.5);
+
+$secondary-color-hover: rgba($primary-color, 0.8);
+$secondary-color-hover_dark: rgba($primary-color_dark, 0.8);
+
+$border-color: rgba($primary-color, 0.05);
+$border-color_dark: rgba(255, 255, 255, 0.07);
+
+
+$color-red: #d0021b;
+$color-red_dark: #ff4258;
+
+$color-blue: #006fee;
+$color-green: #6eab27;
+$color-orange: #f7924e;
+$color-white: #fff;
+$color-black: #1b1b1d;
+$color-jaguar: #232327;
+
+$goldenrod-color: #e5bf20;
+$goldenrod-color_dark: #86741a;
+
+// styles
+$border-style: 1px solid $border-color;
+$border-style_dark: 1px solid $border-color_dark;
+$border-block-style: 1px solid rgba($primary-color, 0.07);
+$border-block-style_dark: 1px solid rgba($primary-color_dark, 0.07);
+
+
+$max-content-width: 1236px;
+
+// font sizes
+$fontSizeExtraSmall: 12px;
+$fontSizeSmall: 14px;
+$fontSizeMedium: 16px;
+$fontSizeLarge: 18px;
+$fontSizeExtraLarge: 20px;
+$fontSizeModalTitle: 24px;
+$fontSizeGreat: 32px;
+$fontSizeTitanic: 40px;
+
+// screen breakpoints
+$screenXXL: 2048px;
+$screenXL: 1920px;
+$screenL: 1280px;
+$screenM: 991px;
+$screenS: 767px;
+$screenXS: 529px;
+$screenXXS: 319px;
+
+$themes: (
+  default: (
+    color: $primary-color,
+    second-color: $secondary-color,
+    second-color-hover: $secondary-color-hover,
+    accent-color: $color-blue,
+    red-color: $color-red,
+    info-color: rgba($goldenrod-color_dark, 0.7),
+    bg: $color-white,
+    bg-hover: rgba($primary-color, 0.05),
+    bg-hover-dark: $color-white,
+    block-shadow: 0 5px 20px 0 rgba($primary-color, 0.04),
+    block-shadow-hover: 0 15px 30px 0 rgba($primary-color, 0.1),
+    border: $border-style,
+    border-block: $border-block-style,
+    gray-img: none,
+    invert-img: invert(0),
+  ),
+  dark: (
+    color: $primary-color_dark,
+    second-color: $secondary-color_dark,
+    second-color-hover: $secondary-color-hover_dark,
+    accent-color: $color-blue,
+    red-color: $color-red_dark,
+    info-color: rgba($goldenrod-color, 0.7),
+    bg: $color-black,
+    bg-hover: rgba($primary-color_dark, 0.02),
+    bg-hover-dark: $color-jaguar,
+    block-shadow: none,
+    block-shadow-hover: none,
+    border: $border-style_dark,
+    border-block: $border-style_dark,
+    gray-img: grayscale(1) invert(0.4),
+    invert-img: invert(1) grayscale(1),
+  ),
+);

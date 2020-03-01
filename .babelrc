@@ -12,13 +12,14 @@
     ["module-resolver", {
       "root": ["./src"],
       "alias": {
-        "src": "/",
+        "src": "./src",
         "assets": "/assets",
         "components": "/components",
         "pages": "/pages",
-        "store": "/store",
         "api": "/api",
-        "common": "/common"
+        "context": "/context",
+        "consts": "/consts",
+        "helpers": "/helpers"
       }
     }]
   ]

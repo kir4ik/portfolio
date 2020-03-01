@@ -1,0 +1,43 @@
+@import '_variables';
+
+@mixin min-screen-size($screen) {
+  @media (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme_#{$theme},
+    .theme_#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@mixin keyframe($name) {
+  @each $theme, $map in $themes {
+    $theme-map: () !global;
+    @each $key, $submap in $map {
+      $value: map-get(map-get($themes, $theme), '#{$key}');
+      $theme-map: map-merge($theme-map, ($key: $value)) !global;
+    }
+
+    // animation-name_theme-name
+    @keyframes #{$name}_#{$theme} {
+      @content;
+    }
+
+    $theme-map: null !global;
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

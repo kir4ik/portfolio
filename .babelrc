@@ -18,6 +18,7 @@
         "pages": "/pages",
         "api": "/api",
         "context": "/context",
+        "hooks": "/hooks",
         "consts": "/consts",
         "helpers": "/helpers"
       }

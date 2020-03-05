@@ -24,6 +24,13 @@ $color-jaguar: #232327;
 $goldenrod-color: #e5bf20;
 $goldenrod-color_dark: #86741a;
 
+$moon-color: #aaa;
+$sun-color: #ffea00;
+$sun-color_dark: #ffee58;
+
+$theme-backlighting: inset 0px 0px 15px $moon-color;
+$theme-backlighting_dark: inset 0px 0px 15px $sun-color_dark;
+
 // styles
 $border-style: 1px solid $border-color;
 $border-style_dark: 1px solid $border-color_dark;
@@ -52,6 +59,9 @@ $screenS: 767px;
 $screenXS: 529px;
 $screenXXS: 319px;
 
+$border-radius: 5px;
+$transition-duration: 0.4s;
+
 $themes: (
   default: (
     color: $primary-color,
@@ -60,11 +70,13 @@ $themes: (
     accent-color: $color-blue,
     red-color: $color-red,
     info-color: rgba($goldenrod-color_dark, 0.7),
+    sun-color: $sun-color,
     bg: $color-white,
     bg-hover: rgba($primary-color, 0.05),
     bg-hover-dark: $color-white,
     block-shadow: 0 5px 20px 0 rgba($primary-color, 0.04),
     block-shadow-hover: 0 15px 30px 0 rgba($primary-color, 0.1),
+    theme-backlighting: $theme-backlighting,
     border: $border-style,
     border-block: $border-block-style,
     gray-img: none,
@@ -77,11 +89,13 @@ $themes: (
     accent-color: $color-blue,
     red-color: $color-red_dark,
     info-color: rgba($goldenrod-color, 0.7),
+    sun-color: $sun-color_dark,
     bg: $color-black,
     bg-hover: rgba($primary-color_dark, 0.02),
     bg-hover-dark: $color-jaguar,
     block-shadow: none,
     block-shadow-hover: none,
+    theme-backlighting: $theme-backlighting_dark,
     border: $border-style_dark,
     border-block: $border-style_dark,
     gray-img: grayscale(1) invert(0.4),

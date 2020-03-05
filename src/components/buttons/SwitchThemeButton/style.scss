@@ -1,0 +1,55 @@
+@import
+'/assets/_variables',
+'/assets/_mixins';
+
+.switch-theme-button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all $transition-duration;
+  $parrent: &;
+
+  @include themed() {
+    border: t(border);
+
+    &:hover {
+      box-shadow: t(theme-backlighting);
+    }
+  }
+
+  &__svg {
+    width: 100%;
+
+    circle {
+      transition: fill $transition-duration ease-out;
+
+      @include themed() {
+        fill: t(sun-color);
+      }
+    }
+
+    #moon {
+      fill: $moon-color;
+    }
+
+    #star {
+      stroke-width: 9.5px;
+      fill: none;
+    }
+
+    #use {
+      transition: stroke $transition-duration ease-out;
+
+      @include themed() {
+        stroke: t(sun-color);
+      }
+    }
+  }
+}

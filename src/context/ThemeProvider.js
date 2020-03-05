@@ -17,8 +17,8 @@ const ThemeProvider = ({ children }) => {
   const toggleTheme = () => setDarkTheme(!isDarkTheme);
 
   useEffect(() => {
-    htmlClassList.remove(`theme_${isDarkTheme ? 'dark' : 'default'}`);
-    htmlClassList.add(`theme_${isDarkTheme ? 'default' : 'dark'}`);
+    htmlClassList.remove(`theme_${isDarkTheme ? 'default' : 'dark'}`);
+    htmlClassList.add(`theme_${isDarkTheme ? 'dark' : 'default'}`);
     localStorage.setItem(THEME_KEY, isDarkTheme);
   }, [isDarkTheme]);
 

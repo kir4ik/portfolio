@@ -12,6 +12,7 @@
     "build-prod": "npm run clean && parcel build src/index.html"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",

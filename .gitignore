@@ -6,6 +6,7 @@ dist/*
 !dist/index.html
 node_modules/
 *.log
+*.txt
 
 # OS generated files
 .DS_Store

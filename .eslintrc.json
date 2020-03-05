@@ -29,7 +29,9 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
 
-    "import/prefer-default-export": "warn"
+    "import/prefer-default-export": "warn",
+
+    "jsx-a11y/control-has-associated-label": "off"
   },
   "env": {
     "es6": true,
@@ -58,6 +60,7 @@
           ["pages", "./src/pages"],
           ["api", "./src/api"],
           ["context", "./src/context"],
+          ["hooks", "./src/hooks"],
           ["consts", "./src/consts"],
           ["helpers", "./src/helpers"]
         ]

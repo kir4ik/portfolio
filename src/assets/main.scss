@@ -24,10 +24,11 @@ body {
   font-style: normal;
   font-weight: normal;
   position: relative;
+  transition: color $transition-duration, background-color $transition-duration;
 
   @include themed() {
     color: t(color);
-    background-color: t(bg-theme);
+    background-color: t(bg);
   }
 }
 
